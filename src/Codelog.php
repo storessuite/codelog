@@ -2,8 +2,8 @@
 
 namespace StoresSuite\Codelog;
 
-use StoresSuite\Codelog\SanitizesOutput;
-use StoresSuite\Codelog\TimesCommit;
+use StoresSuite\Codelog\Traits\SanitizesOutput;
+use StoresSuite\Codelog\Traits\TimesCommit;
 
 class Codelog {
     use SanitizesOutput, TimesCommit;
