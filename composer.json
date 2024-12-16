@@ -1,0 +1,19 @@
+{
+  "name": "storessuite/codelog",
+  "description": "Converts git commits into worklog.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "StoresSuite\\Codelog\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Saroj Kala Magar",
+      "email": "sarojkalamagar@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {}
+}
