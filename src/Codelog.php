@@ -8,7 +8,7 @@ use StoresSuite\Codelog\TimesCommit;
 class Codelog {
     use SanitizesOutput, TimesCommit;
     
-    public function $command = "git log --oneline --decorate ---pretty=format:'%h %d %ad %an %ae' -date=format:'%Y-%m-%d %H:%M:%S'";
+    public function $command = 'git log --oneline --decorate --pretty=format:"%ad___%h___%an___%ae" --date=iso-strict --all';
 
     public function author (string $email) : Codelog {
         $this->command .= " --author=<$email>";

@@ -10,10 +10,9 @@ trait SanitizesOutput {
             $lineArray = explode('___', $line);
             $commits[] = [
                 'committed_at' => new Datetime($lineArray[0]),
-                'email' => $lineArray[],
-                'name' => $lineArray[],
-                'hash' => $lineArray[],
-                'branch' => $lineArray[]
+                'hash' => $lineArray[1],
+                'name' => $lineArray[2],
+                'email' => $lineArray[3],
             ];
         }
 
