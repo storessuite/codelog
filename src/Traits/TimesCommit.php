@@ -9,5 +9,7 @@ trait TimesCommit {
                 $commit['time_spent'] = 'N/A' : 
                 $commits[$index + 1]->committed_at->diff($commit->committed_at)->format('%H:%I:%S');
         }
+
+        return $commits;
     }
 }
